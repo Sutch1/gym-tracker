@@ -21,7 +21,6 @@ function initApp() {
     }
     renderTabs();
     renderContent();
-    renderCalendar();
 }
 
 // Get all workout types
@@ -579,6 +578,18 @@ function openLogTrainingModal() {
 function closeLogTrainingModal() {
     document.getElementById('logTrainingModal').classList.remove('show');
     selectedDateForTraining = null;
+}
+
+function toggleCalendar() {
+    const modal = document.getElementById('calendarModal');
+    if (!modal.classList.contains('show')) {
+        renderCalendar();
+    }
+    modal.classList.toggle('show');
+}
+
+function closeCalendarModal() {
+    document.getElementById('calendarModal').classList.remove('show');
 }
 
 function logTraining(type) {
