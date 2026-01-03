@@ -555,6 +555,11 @@ function onCalendarDayClick(dateStr) {
     }
 }
 
+function toggleCalendar() {
+    const calendarSection = document.getElementById('calendarSection');
+    calendarSection.style.display = calendarSection.style.display === 'none' ? 'flex' : 'none';
+}
+
 function openLogTrainingModal() {
     const types = getWorkoutTypes();
     const container = document.getElementById('trainingTypesSelect');

@@ -113,7 +113,7 @@ body {
 .tabs-container::after {
     content: '';
     position: fixed;
-    top: 80px;
+    top: 70px;
     bottom: auto;
     width: 30px;
     height: 50px;
@@ -175,7 +175,7 @@ body {
 .content {
     flex: 1;
     overflow-y: auto;
-    padding: 15px;
+    padding: 15px 15px 100px 15px;
     background: #0E101B;
 }
 
@@ -744,6 +744,41 @@ body {
     display: flex;
     gap: 10px;
     margin-bottom: 20px;
+}
+
+/* Bottom Menu */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #1a1f28;
+    border-top: 1px solid #252d3a;
+    padding: 12px;
+    display: flex;
+    justify-content: center;
+    z-index: 100;
+}
+
+.btn-calendar-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #DE1A1A;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+    box-shadow: 0 4px 12px rgba(222, 26, 26, 0.3);
+}
+
+.btn-calendar-toggle:active {
+    background: #c91515;
+    transform: scale(0.95);
+    box-shadow: 0 2px 8px rgba(222, 26, 26, 0.2);
 }
 
 /* Confirm modal (centered) */
